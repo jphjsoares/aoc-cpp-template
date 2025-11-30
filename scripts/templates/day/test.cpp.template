@@ -1,0 +1,19 @@
+#include <gtest/gtest.h>
+
+#include "{{YEAR}}/day_{{DAY}}/solution.h"
+#include "common/utils.h"
+
+// Test with example input
+TEST(Year{{YEAR}}Day{{DAY}}Test, Part1Example) {
+  // TODO: Add example input and expected result when puzzle is available
+  std::string testInput = "";
+  // std::string result = year_{{YEAR}}::day_{{DAY}}::part1(testInput);
+  // EXPECT_EQ(result, "expected_answer");
+}
+
+TEST(Year{{YEAR}}Day{{DAY}}Test, Part2Example) {
+  // TODO: Add example input and expected result when puzzle is available
+  std::string testInput = "";
+  // std::string result = year_{{YEAR}}::day_{{DAY}}::part2(testInput);
+  // EXPECT_EQ(result, "expected_answer");
+}

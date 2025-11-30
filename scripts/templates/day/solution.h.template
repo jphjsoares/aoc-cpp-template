@@ -1,0 +1,22 @@
+#ifndef YEAR_{{YEAR}}_DAY_{{DAY}}_SOLUTION_H
+#define YEAR_{{YEAR}}_DAY_{{DAY}}_SOLUTION_H
+
+#include <string>
+
+namespace year_{{YEAR}} {
+namespace day_{{DAY}} {
+
+/**
+ * Solve part 1 of day {{DAY}}
+ */
+std::string part1(const std::string& input);
+
+/**
+ * Solve part 2 of day {{DAY}}
+ */
+std::string part2(const std::string& input);
+
+}  // namespace day_{{DAY}}
+}  // namespace year_{{YEAR}}
+
+#endif  // YEAR_{{YEAR}}_DAY_{{DAY}}_SOLUTION_H

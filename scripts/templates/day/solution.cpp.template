@@ -1,0 +1,27 @@
+#include "{{YEAR}}/day_{{DAY}}/solution.h"
+
+#include "common/utils.h"
+
+namespace year_{{YEAR}} {
+namespace day_{{DAY}} {
+
+std::string part1(const std::string& input) {
+  // TODO: Implement solution for day {{DAY}} part 1
+  auto lines = aoc::utils::split(input, '\n');
+
+  int result = 0;
+
+  return std::to_string(result);
+}
+
+std::string part2(const std::string& input) {
+  // TODO: Implement solution for day {{DAY}} part 2
+  auto lines = aoc::utils::split(input, '\n');
+
+  int result = 0;
+
+  return std::to_string(result);
+}
+
+}  // namespace day_{{DAY}}
+}  // namespace year_{{YEAR}}

@@ -1,0 +1,15 @@
+# Day {{DAY}} Solution
+add_library({{YEAR}}_day_{{DAY}} solution.cpp)
+target_include_directories({{YEAR}}_day_{{DAY}} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../..)
+target_link_libraries({{YEAR}}_day_{{DAY}} PUBLIC common)
+
+# Day {{DAY}} Tests
+add_executable({{YEAR}}_day_{{DAY}}_test test.cpp)
+target_link_libraries({{YEAR}}_day_{{DAY}}_test
+    {{YEAR}}_day_{{DAY}}
+    common
+    GTest::gtest_main
+)
+
+include(GoogleTest)
+gtest_discover_tests({{YEAR}}_day_{{DAY}}_test)

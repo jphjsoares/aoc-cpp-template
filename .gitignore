@@ -1,0 +1,36 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment and secrets
+.env
+
+# Puzzle inputs (keep test inputs, ignore real inputs)
+**/input.txt
+
+# Compiled binaries
+*.exe
+*.out
+*.app
+aoc
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# OS files
+.DS_Store
+Thumbs.db
+
+.cache
