@@ -24,7 +24,7 @@ bool fetchInput(int year, int day, const std::string& outputPath);
  */
 std::string loadSessionCookie();
 
-} // namespace fetcher
-} // namespace aoc
+}  // namespace fetcher
+}  // namespace aoc
 
-#endif // AOC_INPUT_FETCHER_H
+#endif  // AOC_INPUT_FETCHER_H

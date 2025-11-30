@@ -1,6 +1,6 @@
-# Advent of Code - C++ Solutions
+# Advent of Code - C++
 
-This repository contains C++ solutions for [Advent of Code](https://adventofcode.com), supporting multiple years.
+This repository contains a C++ template for [Advent of Code](https://adventofcode.com), supporting multiple years.
 
 ## Features
 

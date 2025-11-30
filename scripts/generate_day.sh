@@ -68,14 +68,6 @@ sed -e "s/{{YEAR}}/$YEAR/g" -e "s/{{DAY}}/$DAY/g" \
   "$TEMPLATE_DIR/CMakeLists.txt.template" >"$DAY_DIR/CMakeLists.txt"
 echo "Created CMakeLists.txt"
 
-# Generate empty input files
-sed -e "s/{{YEAR}}/$YEAR/g" -e "s/{{DAY}}/$DAY/g" \
-  "$TEMPLATE_DIR/input_test.txt.template" >"$TESTS_DIR/input_test.txt"
-
-sed -e "s/{{YEAR}}/$YEAR/g" -e "s/{{DAY}}/$DAY/g" \
-  "$TEMPLATE_DIR/input.txt.template" >"$TESTS_DIR/input.txt"
-echo "Created input files"
-
 # Update main.cpp to include the new day
 MAIN_FILE="$PROJECT_ROOT/main.cpp"
 if [ -f "$MAIN_FILE" ]; then

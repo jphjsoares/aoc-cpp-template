@@ -90,6 +90,7 @@ if(CLANG_FORMAT)
     # Check-format target - verifies formatting without modifying files
     add_custom_target(check-format
         COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/scripts/check_format.sh
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
         COMMENT "Checking C++ code formatting"
     )
 else()

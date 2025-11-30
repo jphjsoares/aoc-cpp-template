@@ -1,10 +1,10 @@
 #ifndef AOC_UTILS_H
 #define AOC_UTILS_H
 
-#include <string>
-#include <vector>
 #include <fstream>
 #include <sstream>
+#include <string>
+#include <vector>
 
 namespace aoc {
 namespace utils {
@@ -49,7 +49,7 @@ long toLong(const std::string& str);
  */
 long long toLongLong(const std::string& str);
 
-} // namespace utils
-} // namespace aoc
+}  // namespace utils
+}  // namespace aoc
 
-#endif // AOC_UTILS_H
+#endif  // AOC_UTILS_H
