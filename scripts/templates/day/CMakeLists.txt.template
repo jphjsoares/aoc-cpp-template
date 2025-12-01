@@ -11,5 +11,17 @@ target_link_libraries({{YEAR}}_day_{{DAY}}_test
     GTest::gtest_main
 )
 
+# Copy test input files to build directory
+configure_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/tests/input_example.txt"
+    "${CMAKE_CURRENT_BINARY_DIR}/tests/input_example.txt"
+    COPYONLY
+)
+configure_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/tests/input.txt"
+    "${CMAKE_CURRENT_BINARY_DIR}/tests/input.txt"
+    COPYONLY
+)
+
 include(GoogleTest)
 gtest_discover_tests({{YEAR}}_day_{{DAY}}_test)
